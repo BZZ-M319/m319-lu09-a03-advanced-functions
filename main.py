@@ -1,12 +1,14 @@
-def calculate():
+def div(dividend, divisor):
     """
-    calculates the total
-    :return: None
+    TODO
     """
-    price = 15.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
+    ...
+
+
+def main():
+    result, rest = div(34, 6)
+    print(...)
 
 
 if __name__ == '__main__':
-    calculate()
+    main()
