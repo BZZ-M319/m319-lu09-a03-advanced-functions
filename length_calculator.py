@@ -1,11 +1,16 @@
-def convert(length, from_unit, to_unit):
+def convert(length, from_unit=1, to_unit=2):
     """
     Converts lengths. The following lengths can be converted: meters, miles, nautical miles, yards, inches
     :length: length to convert
-    :from_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
-    :to_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
+    :from_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches or equivalent strings
+    :to_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches or equivalent strings
     :return: converted length
     """
+    units = {"Meter": 1, "Meilen": 2, "Seemeilen": 3, "Yard": 4, "Inches": 5}
+
+    from_unit = units.get(from_unit, from_unit)
+    to_unit = units.get(to_unit, to_unit)
+
     if (from_unit == 1):
         result = length
     elif (from_unit == 2):
@@ -31,7 +36,6 @@ def convert(length, from_unit, to_unit):
     if (to_unit == 5):
         result = result / 0.0254
         return result
-
 
 def main():
     print("1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches")
