@@ -1,0 +1,44 @@
+[
+  {
+    "name": "test_default_conversion",
+    "function": "test_default_conversion",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_specific_conversion",
+    "function": "test_specific_conversion",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_conversion_with_string_units",
+    "function": "test_conversion_with_string_units",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_reverse_conversion",
+    "function": "test_reverse_conversion",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_division_normal",
+    "function": "test_division_normal",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_division_zero_remainder",
+    "function": "test_division_zero_remainder",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_division_by_zero",
+    "function": "test_division_by_zero",
+    "timeout": 10,
+    "points": 1
+  }
+]
